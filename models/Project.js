@@ -3,14 +3,25 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const ProjectSchema = new Schema({
+  category: {
+    type: String,
+    required: true,
+  },
   name: {
     type: String,
-    required: true
+    required: true,
   },
-  link: {
+  description: {
     type: String,
-    required: true
-  }
+    required: true,
+  },
+  mimageUri: {
+    type: String,
+    required: true,
+  },
+  timeStamp: {
+    type: Date(),
+  },
 });
 
 module.exports = mongoose.model("Projects", ProjectSchema);

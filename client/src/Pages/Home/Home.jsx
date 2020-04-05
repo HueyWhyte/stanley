@@ -12,7 +12,7 @@ export default class Home extends Component {
         </div>
         <div style={{ height: "100vh", backgroundColor: "green" }}>
           <p>column 1</p>
-          <Parallax speed={-5}>I'm slow and smooth</Parallax>
+          <Parallax speed={-2}>I'm slow and smooth</Parallax>
         </div>
         <div style={{ height: "100vh", backgroundColor: "yellow" }}>
           <p>column 1</p>
