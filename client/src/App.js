@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Parallax from "react-rellax";
+
 import { ThemeProvider } from "styled-components";
 
 import "./App.css";
@@ -48,7 +50,9 @@ function App() {
             <ErrorPage />
           </Route>
         </Switch>
-        <Footer />
+        <Parallax speed={-7}>
+          <Footer />
+        </Parallax>
       </Router>
     </div>
   );
