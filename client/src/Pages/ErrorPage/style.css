@@ -1,3 +1,37 @@
 .errorpage {
-  height: calc(100vh - 50px);
+  display: flex;
+  height: calc(100vh - 65px);
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.err-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+}
+
+.back-h-btn {
+  display: flex;
+  background-color: rgb(164, 175, 226);
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  z-index: 1;
+  font-family: "DM Sans", sans-serif;
+  transition-duration: 0.6s;
+  align-items: center;
+}
+
+.back-h-btn:hover {
+  transition-duration: 0.6s;
+  transform: translateY(-3px);
+  transform: scaleX(1.1px);
 }

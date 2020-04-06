@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+// import { IoIosFolderOpen, IoMdHome } from "react-icons/io";
+
 import "./style.css";
 
 export default class NavigationBar extends Component {
@@ -12,6 +14,7 @@ export default class NavigationBar extends Component {
           className="nav-item"
           activeClassName="active-nav-btnOne"
         >
+          {/* <IoMdHome size={20} color="grey" /> */}
           Home
         </NavLink>
         <NavLink
@@ -19,6 +22,7 @@ export default class NavigationBar extends Component {
           className="nav-item"
           activeClassName="active-nav-btnTwo"
         >
+          {/* <IoIosFolderOpen size={20} color="grey" /> */}
           Projects
         </NavLink>
         <NavLink

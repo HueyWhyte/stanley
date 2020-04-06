@@ -1,58 +1,62 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Parallax from "react-rellax";
 
-import { ThemeProvider } from "styled-components";
+// import { ThemeProvider } from "styled-components";
 
 import "./App.css";
-
-import { lightTheme, darkTheme } from "./theme";
-import { GlobalStyles } from "./global";
+// import { lightTheme, darkTheme } from "./theme";
+// import { GlobalStyles } from "./global";
 
 import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
+import ProjectDetails from "./Pages/ProjectDetails";
 import Contact from "./Pages/Contact";
 import Blog from "./Pages/Blog";
 import ErrorPage from "./Pages/ErrorPage";
+import Welcome from "./Pages/Welcome";
 
 import NavigationBar from "./Components/NavigationBar";
 import Footer from "./Components/Footer";
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  // const [theme, setTheme] = useState("light");
 
-  const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  };
+  // const toggleTheme = () => {
+  //   if (theme === "light") {
+  //     setTheme("dark");
+  //   } else {
+  //     setTheme("light");
+  //   }
+  // };
 
   return (
     <div className="App">
       <Router>
         <NavigationBar />
         <Switch>
-          <Route path="/projects">
+          <Route exact path="/projects/:id">
+            <ProjectDetails />
+          </Route>
+          <Route exact path="/projects">
             <Projects />
           </Route>
-          <Route path="/blog">
+          <Route exact path="/blog">
             <Blog />
           </Route>
-          <Route path="/contact">
+          <Route exact path="/contact">
             <Contact />
           </Route>
           <Route exact path="/home">
             <Home />
           </Route>
+          <Route exact path="/">
+            <Welcome />
+          </Route>
           <Route>
             <ErrorPage />
           </Route>
         </Switch>
-        <Parallax speed={-7}>
-          <Footer />
-        </Parallax>
+        <Footer />
       </Router>
     </div>
   );

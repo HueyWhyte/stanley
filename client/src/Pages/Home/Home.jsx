@@ -6,18 +6,39 @@ import "./style.css";
 export default class Home extends Component {
   render() {
     return (
-      <div>
-        <div style={{ height: "calc(100vh - 50px)", padding: 12 }}>
-          <p>column 1</p>
-        </div>
-        <div style={{ height: "100vh", backgroundColor: "green" }}>
+      <>
+        <section className="first-section">
+          <Parallax speed={2}>
+            <p style={{ color: "white", fontSize: 40 }}>Hello, I'm </p>
+          </Parallax>
+          <Parallax speed={-3}>
+            <p
+              style={{
+                color: "orange",
+                fontSize: 80,
+                fontWeight: "bold",
+                margin: 20,
+              }}
+            >
+              Stanley Otabil
+            </p>
+          </Parallax>
+          <Parallax speed={4}>
+            <p style={{ color: "white", fontSize: 40 }}>
+              I'm a full-stack web developer
+            </p>
+          </Parallax>
+        </section>
+
+        <section style={{ height: "100vh", backgroundColor: "yellow" }}>
           <p>column 1</p>
           <Parallax speed={-2}>I'm slow and smooth</Parallax>
-        </div>
-        <div style={{ height: "100vh", backgroundColor: "yellow" }}>
+        </section>
+
+        <section style={{ height: "100vh" }}>
           <p>column 1</p>
-        </div>
-      </div>
+        </section>
+      </>
     );
   }
 }

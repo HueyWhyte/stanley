@@ -1,15 +1,8 @@
 footer {
-  height: 50vh;
+  height: 30vh;
   padding: 12px;
-  /* justify-content: center;
-  align-content: center;
-  align-items: center; */
-
-  /* position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: red;
-  color: white;
-  text-align: center; */
+  background-color: white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: -2px -1px 10px 0px #c9c9c9;
 }
