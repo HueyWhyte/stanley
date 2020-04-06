@@ -20,7 +20,7 @@ const ProjectSchema = new Schema({
     required: true,
   },
   timeStamp: {
-    type: Date(),
+    type: Date,
   },
 });
 
