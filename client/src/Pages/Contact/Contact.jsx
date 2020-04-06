@@ -10,6 +10,8 @@ export default class Contact extends Component {
     name: "",
     email: "",
     message: "",
+    sent: false,
+    buttonText: "Send Message",
   };
 
   handleInput = (e) => {
@@ -18,8 +20,18 @@ export default class Contact extends Component {
     this.setState({ [name]: value });
   };
 
-  showThanks = (e) => {
+  submitEmail = (e) => {
     e.preventDefault();
+
+    this.setState({
+      buttonText: "...sending",
+    });
+
+    let data = {
+      name: this.state.name,
+      email: this.state.email,
+      message: this.state.message,
+    };
 
     if (this.state.name !== "") {
       console.log("name field is correct perform other tasks");
@@ -28,6 +40,15 @@ export default class Contact extends Component {
         if (this.state.message !== "") {
           console.log("message field is also correct perform other tasks");
           this.setState({ showBar: true });
+          // logic goes here
+          axios
+            .post("API_URI", data)
+            .then((res) => {
+              this.setState({ sent: true }, this.resetForm());
+            })
+            .catch(() => {
+              console.log("Message not sent");
+            });
         } else {
           console.log("message field empty");
         }
@@ -37,6 +58,15 @@ export default class Contact extends Component {
     } else {
       console.log("name field empty");
     }
+  };
+
+  resetForm = () => {
+    this.setState({
+      name: "",
+      message: "",
+      email: "",
+      buttonText: "Message Sent",
+    });
   };
 
   render() {
@@ -54,7 +84,12 @@ export default class Contact extends Component {
             >
               Get in touch
             </p>
-            <form action="." method="POST" className="form-style">
+            <form
+              action="."
+              method="POST"
+              className="form-style"
+              onSubmit={this.submitEmail}
+            >
               <section
                 style={{
                   display: "flex",
@@ -117,11 +152,7 @@ export default class Contact extends Component {
                 ) : null}
               </section>
 
-              <button
-                className="send-btn"
-                type="submit"
-                onClick={this.showThanks}
-              >
+              <button className="send-btn" type="submit">
                 <IoIosPaperPlane size={25} color="white" />
               </button>
             </form>
@@ -142,7 +173,13 @@ export default class Contact extends Component {
                 Thank You.
               </p>
               <hr />
-              <p style={{ color: "white", fontSize: 23, paddingTop: 20 }}>
+              <p
+                style={{
+                  color: "white",
+                  fontSize: 23,
+                  paddingTop: 20,
+                }}
+              >
                 We'll be in touch.
               </p>
             </div>

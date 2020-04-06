@@ -1,7 +1,7 @@
 {
   "name": "stanley",
   "version": "1.4.0",
-  "description": "",
+  "description": "My portfolio website",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,6 +13,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongoose": "^5.9.5"
+    "mongoose": "^5.9.5",
+    "nodemailer": "^6.4.6"
   }
 }
