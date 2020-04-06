@@ -84,8 +84,6 @@ export default class Footer extends Component {
     );
   }
 }
-// npm install -g serve
-// serve -s build
 
 const styles = {
   footerContainer: {
