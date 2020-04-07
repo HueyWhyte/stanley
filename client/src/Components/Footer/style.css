@@ -1,8 +1,25 @@
 footer {
   height: 30vh;
-  padding: 12px;
+  width: 100%;
   background-color: white;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   box-shadow: -2px -1px 10px 0px #c9c9c9;
+  display: flex;
+  justify-content: space-around;
+}
+
+.firstSection {
+  padding: 20px 0px 20px 20px;
+}
+
+.secendSection {
+  padding: 20px 5px;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 20px 0px;
+  justify-content: space-evenly;
 }

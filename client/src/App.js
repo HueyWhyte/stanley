@@ -1,12 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
 // import { ThemeProvider } from "styled-components";
-
 import "./App.css";
 // import { lightTheme, darkTheme } from "./theme";
 // import { GlobalStyles } from "./global";
-
 import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
 import ProjectDetails from "./Pages/ProjectDetails";
@@ -14,7 +11,6 @@ import Contact from "./Pages/Contact";
 import Blog from "./Pages/Blog";
 import ErrorPage from "./Pages/ErrorPage";
 import Welcome from "./Pages/Welcome";
-
 import NavigationBar from "./Components/NavigationBar";
 import Footer from "./Components/Footer";
 
@@ -32,11 +28,17 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <NavigationBar />
+        <div
+          style={{
+            display: "flex",
+            width: "100%",
+            justifyContent: "center",
+          }}
+        >
+          <NavigationBar />
+        </div>
         <Switch>
-          <Route exact path="/projects/:id">
-            <ProjectDetails />
-          </Route>
+          <Route exact path="/projects/:id" component={ProjectDetails} />
           <Route exact path="/projects">
             <Projects />
           </Route>

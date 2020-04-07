@@ -1,5 +1,5 @@
 .project-detail-container {
-  padding: 70px 0 20px 0;
+  padding-bottom: 20px;
 }
 
 .bg-header-image {
@@ -13,14 +13,11 @@
   height: 230px;
   justify-content: center;
   align-items: center;
-  padding: 12px;
+  padding: 12px 0px;
 }
 
 .info-section {
-  display: flex;
-  flex-direction: column;
   background-color: white;
-  padding: 10px;
   border-radius: 12px;
   margin: 12px auto;
   width: 89%;
@@ -29,13 +26,16 @@
 
 .tags {
   padding: 8px;
-  background-color: #d4d4d4;
+  background-color: #e2e2e2;
   border-radius: 8px;
-  margin-right: 12px;
-  font-size: 18px;
+  margin: 0px 12px 5px 0px;
+  font-size: 17px;
   color: #1a1a1a;
 }
 
 .images-section {
   margin-top: 25px;
+  width: 89%;
+  margin-left: auto;
+  margin-right: auto;
 }

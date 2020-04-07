@@ -1,6 +1,6 @@
 const data = [
   {
-    id: 1,
+    _id: 1,
     category: "APP",
     name: "My Clauset",
     slogan: "some slogan of app",
@@ -9,7 +9,7 @@ const data = [
     imageUri: require("./img/kevin.jpg"),
   },
   {
-    id: 2,
+    _id: 2,
     category: "DESKTOP",
     name: "Task Rocket",
     slogan: "some slogan of app",
@@ -18,7 +18,7 @@ const data = [
     imageUri: require("./img/roman.jpg"),
   },
   {
-    id: 3,
+    _id: 3,
     category: "WEBSITE",
     name: "Portfolio",
     slogan: "some slogan of app",
@@ -27,7 +27,7 @@ const data = [
     imageUri: require("./img/kevin.jpg"),
   },
   {
-    id: 4,
+    _id: 4,
     category: "APP",
     name: "Task Rocket",
     slogan: "some slogan of app",
@@ -36,7 +36,7 @@ const data = [
     imageUri: require("./img/roman.jpg"),
   },
   {
-    id: 5,
+    _id: 5,
     category: "UI-UX",
     name: "Portfolio",
     slogan: "some slogan of app",
@@ -45,7 +45,7 @@ const data = [
     imageUri: require("./img/kevin.jpg"),
   },
   {
-    id: 6,
+    _id: 6,
     category: "DESKTOP",
     name: "Portfolio",
     slogan: "some slogan of app",
@@ -54,7 +54,7 @@ const data = [
     imageUri: require("./img/roman.jpg"),
   },
   {
-    id: 7,
+    _id: 7,
     category: "DESKTOP",
     name: "Portfolio",
     slogan: "some slogan of app",
@@ -63,7 +63,7 @@ const data = [
     imageUri: require("./img/roman.jpg"),
   },
   {
-    id: 8,
+    _id: 8,
     category: "UI-UX",
     name: "Portfolio",
     slogan: "some slogan of app",

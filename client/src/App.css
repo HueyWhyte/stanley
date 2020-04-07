@@ -2,3 +2,34 @@
   margin: 0;
   padding: 0;
 }
+
+.color_vers {
+  /* navigation colors */
+  color: orange;
+  color: red;
+  color: green;
+  color: blue;
+
+  /* categories colors */
+  color: #ff6a6a;
+  color: #6a99ff;
+  color: #ff6aeb;
+  color: #a1ff6a;
+
+  /* porject card colors */
+  color: #383838;
+  color: #8f8f8f;
+  color: #b9b9b9;
+
+  /* input and textarea colors */
+  color: #f0f0f0;
+
+  /* tags color */
+  color: #e2e2e2;
+  color: #1a1a1a;
+
+  /* social  icons */
+  color: #1da1f2;
+  color: #0000d1;
+  color: linear-gradient(red, blue, yellow);
+}

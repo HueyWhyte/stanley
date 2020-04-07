@@ -1,9 +1,9 @@
 export const fetchProjects = () => (dispatch) => {
-  fetch("https://doxa-wears.herokuapp.com/projects")
+  fetch("https://stanleyy.herokuapp.com/projects")
     .then((response) => response.json())
     .then((projects) => {
       dispatch({
-        type: "FETCH_PRODUCTS",
+        type: "FETCH_PROJECTS",
         payload: projects,
       });
     })
@@ -11,11 +11,11 @@ export const fetchProjects = () => (dispatch) => {
 };
 
 export const fetchProject = (id) => (dispatch) => {
-  fetch(`https://doxa-wears.herokuapp.com/projects/${id}`)
+  fetch(`https://stanleyy.herokuapp.com/projects/${id}`)
     .then((response) => response.json())
     .then((project) => {
       dispatch({
-        type: "FETCH_PRODUCT",
+        type: "FETCH_PROJECT",
         payload: project,
       });
       // console.log(project);
@@ -24,7 +24,7 @@ export const fetchProject = (id) => (dispatch) => {
 };
 
 export const newProject = (nproject) => (dispatch) => {
-  fetch("https://doxa-wears.herokuapp.com/projects", {
+  fetch("https://stanleyy.herokuapp.com/projects/new", {
     method: "post",
     headers: {
       "Content-Type": "application/json",
@@ -34,7 +34,7 @@ export const newProject = (nproject) => (dispatch) => {
     .then((response) => response.json())
     .then((project) => {
       dispatch({
-        type: "NEW_PRODUCT",
+        type: "NEW_PROJECT",
         payload: project,
       });
       return (window.location = "/doxa-admin");

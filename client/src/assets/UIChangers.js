@@ -21,3 +21,8 @@ export const headerImageChanger = (category) => {
     return require("./img/desktop.jpg");
   }
 };
+
+// APP
+// WEBSITE
+// UI - UX
+// DESKTOP

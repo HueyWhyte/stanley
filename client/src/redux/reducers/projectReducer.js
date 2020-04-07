@@ -10,12 +10,12 @@ const projectReducer = (state = initState, action) => {
         ...state,
         items: action.payload,
       };
-    case "FETCH_PROJECTS":
+    case "FETCH_PROJECT":
       return {
         ...state,
         item: action.payload,
       };
-    case "NEW_PROJECTS":
+    case "NEW_PROJECT":
       return {
         ...state,
         item: action.payload,

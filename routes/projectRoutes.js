@@ -25,13 +25,11 @@ router.get("/:id", (req, res) => {
 // add a new project
 router.post("/new", (req, res) => {
   const newProject = new Project({
+    category: req.body.category,
     name: req.body.name,
-    size: req.body.size,
-    price: req.body.price,
-    image1: req.body.image1,
-    image2: req.body.image2,
-    image3: req.body.image3,
+    slogan: req.body.slogan,
     description: req.body.description,
+    imageUrl: req.body.imageUrl,
   });
 
   Project.create(newProject)
@@ -47,14 +45,11 @@ router.post("/new", (req, res) => {
 router.post("/:id/update", (req, res) => {
   Project.findById(req.params.id)
     .then((data) => {
+      data.category = req.body.category;
       data.name = req.body.name;
-      data.price = req.body.price;
-      data.size = req.body.size;
-      data.image1 = req.body.image1;
-      data.image2 = req.body.image2;
-      data.image3 = req.body.image3;
+      data.slogan = req.body.slogan;
       data.description = req.body.description;
-
+      data.imageUrl = req.body.imageUrl;
       data
         .save()
         .then((dbProject) => {
@@ -70,7 +65,7 @@ router.post("/:id/update", (req, res) => {
 });
 
 // delete a project
-router.delete("/:id", (req, res) => {
+router.delete("/:id/delete", (req, res) => {
   Project.deleteOne({ _id: req.params.id })
     .then((dbProject) => {
       res.json(dbProject);

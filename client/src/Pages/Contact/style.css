@@ -1,8 +1,12 @@
 .contact-container {
   display: flex;
+  flex-direction: column;
   height: 100vh;
+}
+
+.main-contents {
+  display: flex;
   justify-content: space-evenly;
-  padding-top: 70px;
   flex-wrap: wrap;
 }
 

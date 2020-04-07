@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Parallax from "react-rellax";
-
 import "./style.css";
 
 export default class Home extends Component {
@@ -11,7 +10,7 @@ export default class Home extends Component {
           <Parallax speed={2}>
             <p style={{ color: "white", fontSize: 40 }}>Hello, I'm </p>
           </Parallax>
-          <Parallax speed={-3}>
+          <Parallax speed={-3.5}>
             <p
               style={{
                 color: "orange",
@@ -23,7 +22,7 @@ export default class Home extends Component {
               Stanley Otabil
             </p>
           </Parallax>
-          <Parallax speed={4}>
+          <Parallax speed={5}>
             <p style={{ color: "white", fontSize: 40 }}>
               I'm a full-stack web developer
             </p>
