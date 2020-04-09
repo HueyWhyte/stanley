@@ -6,7 +6,7 @@ const data = [
     slogan: "some slogan of app",
     description: "A fashion shop app",
     timestamp: "SEP 2019",
-    imageUri: require("./img/kevin.jpg"),
+    imageUri: require("./img/roman.jpg"),
   },
   {
     _id: 2,
@@ -24,7 +24,7 @@ const data = [
     slogan: "some slogan of app",
     description: "A fortfolio website",
     timestamp: "FEB 2020",
-    imageUri: require("./img/kevin.jpg"),
+    imageUri: require("./img/roman.jpg"),
   },
   {
     _id: 4,
@@ -42,7 +42,7 @@ const data = [
     slogan: "some slogan of app",
     description: "A fortfolio website",
     timestamp: "FEB 2020",
-    imageUri: require("./img/kevin.jpg"),
+    imageUri: require("./img/roman.jpg"),
   },
   {
     _id: 6,
