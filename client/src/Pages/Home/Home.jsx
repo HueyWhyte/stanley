@@ -97,7 +97,7 @@ export default class Home extends Component {
               <Parallax speed={1.9} style={{ marginTop: "auto" }}>
                 <p style={{ fontSize: 20 }}>
                   Websites don't have to be static, I love making pages come to
-                  life. With Gestures and animations.
+                  life with Gestures and animations.
                 </p>
               </Parallax>
             </Parallax>
@@ -123,7 +123,7 @@ export default class Home extends Component {
               <Parallax
                 speed={2}
                 style={{
-                  backgroundColor: "yellow",
+                  backgroundColor: "blue",
                   borderRadius: 100,
                   width: 100,
                   height: 100,
