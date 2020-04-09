@@ -9,14 +9,14 @@ export default class ProjectCard extends Component {
     return (
       <Link className="project-card" to={`projects/${this.props.id}`}>
         <div>
-          <img src={`${this.props.imageUri}`} alt="" className="project-img" />
+          <img src={`${this.props.imageUrl}`} alt="" className="project-img" />
           <section>
             <p style={{ color: colorChanger(this.props.category) }}>
               {this.props.category}
             </p>
             <p>{this.props.name}</p>
             <p>{this.props.slogan}</p>
-            <p>{this.props.timestamp}</p>
+            <p>{this.props.timeStamp}</p>
           </section>
         </div>
       </Link>

@@ -27,7 +27,7 @@ class ProjectDetails extends Component {
             backgroundSize: "cover",
           }}
         >
-          <h4 style={{ fontSize: 16, color: colorChanger("DESKTOP") }}>
+          <h4 style={{ fontSize: 16, color: colorChanger(project.category) }}>
             {project.category}
           </h4>
           <h1 style={{ fontSize: 55, margin: 12, color: "white" }}>

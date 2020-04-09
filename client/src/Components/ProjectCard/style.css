@@ -35,19 +35,19 @@
 
 .project-card section p:nth-child(2) {
   color: #383838;
-  /* color: #ff6aeb; */
   font-weight: bold;
   font-size: 30px;
 }
 
 .project-card section p:nth-child(3) {
   color: #8f8f8f;
-  /* color: #ff000083; */
-  font-size: 23px;
+  font-size: 21px;
 }
 
 .project-card section p:last-child {
   color: #b9b9b9;
-  /* color: #ff00004d; */
   font-size: 15px;
+  margin-left: auto;
+  width: 120px;
+  text-align: end;
 }

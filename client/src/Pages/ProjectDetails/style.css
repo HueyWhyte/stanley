@@ -26,11 +26,11 @@
 
 .tags {
   padding: 8px;
-  background-color: #e2e2e2;
+  background-color: var(--vlight-grey);
   border-radius: 8px;
   margin: 0px 12px 5px 0px;
   font-size: 17px;
-  color: #1a1a1a;
+  color: var(--dark-grey);
 }
 
 .images-section {

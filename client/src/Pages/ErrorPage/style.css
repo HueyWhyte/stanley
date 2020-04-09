@@ -17,7 +17,7 @@
 
 .back-h-btn {
   display: flex;
-  background-color: #6a99ff;
+  background-color: var(--light-blue);
   border-radius: 20px;
   border: none;
   padding: 10px;

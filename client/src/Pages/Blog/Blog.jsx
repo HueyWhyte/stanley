@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
 import ClearSpace from "../../Components/clearSpace";
+import BlogCard from "../../Components/BlogCard";
 
 export default class Blog extends Component {
   render() {
@@ -9,7 +10,10 @@ export default class Blog extends Component {
         <ClearSpace />
 
         <section className="main-blog-section">
-          <h1>Blog Page</h1>
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
         </section>
       </div>
     );

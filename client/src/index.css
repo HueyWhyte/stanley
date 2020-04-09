@@ -1,4 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:500,700&display=swap");
+@font-face {
+  font-family: "AndallanDemo";
+  src: url("./assets/fonts/AndallanDemo.otf");
+}
+
+:root {
+  --main-bg-color: #f5f5f5;
+  --nav-red: red;
+  --dark-grey: #383838;
+  --medium-grey: #8f8f8f;
+  --light-grey: #b9b9b9;
+  --vlight-grey: #f0f0f0;
+  --light-blue: #6a99ff;
+  --light-red: #ff6a6a;
+  --dark-pink: #ff6aeb;
+  --light-green: #a1ff6a;
+}
 
 body {
   margin: 0;
@@ -10,6 +27,5 @@ body {
   /* font-family: "DM Sans", sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f5f5f5;
-  scroll-behavior: smooth;
+  background-color: var(--main-bg-color);
 }

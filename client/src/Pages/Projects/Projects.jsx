@@ -4,7 +4,7 @@ import "./style.css";
 import ProjectCard from "../../Components/ProjectCard";
 import { fetchProjects } from "../../redux/actions/projectAction";
 
-import data from "../../assets/data";
+// import data from "../../assets/data";
 import ClearSpace from "../../Components/clearSpace";
 
 class Projects extends Component {
@@ -20,8 +20,8 @@ class Projects extends Component {
         <ClearSpace />
 
         <section className="data-container">
-          {data &&
-            data.map((project) => (
+          {projects &&
+            projects.map((project) => (
               <ProjectCard
                 key={project._id}
                 id={project._id}
@@ -29,8 +29,8 @@ class Projects extends Component {
                 name={project.name}
                 slogan={project.slogan}
                 description={project.description}
-                imageUri={project.imageUri}
-                timestamp={project.timestamp}
+                imageUrl={project.imageUrl}
+                timeStamp={project.timeStamp}
               />
             ))}
         </section>

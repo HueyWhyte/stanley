@@ -37,7 +37,8 @@ export const newProject = (nproject) => (dispatch) => {
         type: "NEW_PROJECT",
         payload: project,
       });
-      return (window.location = "/doxa-admin");
+      console.log(project);
+      // return (window.location = "/doxa-admin");
     })
     .catch((err) => console.log(err));
 };

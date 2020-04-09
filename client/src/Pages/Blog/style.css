@@ -1,7 +1,10 @@
 .blog-container {
-  height: 100vh;
   flex-direction: column;
+  padding: 12px;
 }
 
 .main-blog-section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }

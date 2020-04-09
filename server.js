@@ -14,12 +14,12 @@ app.use(cors());
 app.use("/projects", projectRoutes);
 
 mongoose
-  .connect(process.env.MONGODB_URI || "mongodb://localhost:27017/myapp", {
+  .connect(process.env.MONGODB_URI || "some-local-fatabase", {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
   })
   .then(() => console.log("Mongo connected"))
-  .catch(err => console.log(err));
+  .catch((err) => console.log(err));
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
@@ -30,4 +30,4 @@ if (process.env.NODE_ENV === "production") {
 }
 
 const port = process.env.PORT || 5000;
-app.listen(port, () => console.log(`Server up and running on ${port}.`));
+app.listen(port, () => console.log(`Server up and running on port ${port}.`));

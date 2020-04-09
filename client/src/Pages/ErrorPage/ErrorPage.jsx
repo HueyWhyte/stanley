@@ -29,7 +29,7 @@ export default class ErrorPage extends Component {
           </p>
           <Parallax speed={-2}>
             <Link
-              to="/home"
+              to="/"
               className="back-h-btn"
               onMouseOver={this.showArrow}
               onMouseLeave={this.showArrow}

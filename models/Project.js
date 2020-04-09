@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
+let now = new Date();
 
 const ProjectSchema = new Schema({
   category: {
@@ -23,8 +24,9 @@ const ProjectSchema = new Schema({
     type: String,
     required: true,
   },
-  timeStamp: {
-    type: Date,
+  date: {
+    type: String,
+    required: true,
   },
 });
 

@@ -7,11 +7,7 @@ export default function NavigationBar() {
   return (
     <div className="NavigationBar">
       {/* <h1>NavigationBar</h1> */}
-      <NavLink
-        to="/home"
-        className="nav-item"
-        activeClassName="active-nav-btnOne"
-      >
+      <NavLink to="/" className="nav-item" activeClassName="active-nav-btnOne">
         {/* <IoMdHome size={20} color="grey" /> */}
         Home
       </NavLink>

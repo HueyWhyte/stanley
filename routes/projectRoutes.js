@@ -30,6 +30,7 @@ router.post("/new", (req, res) => {
     slogan: req.body.slogan,
     description: req.body.description,
     imageUrl: req.body.imageUrl,
+    date: req.body.date,
   });
 
   Project.create(newProject)
