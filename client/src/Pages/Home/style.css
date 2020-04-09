@@ -1,6 +1,6 @@
 .first-section {
   height: 100vh;
-  background: linear-gradient(#000000, #00000093, #000000),
+  background: linear-gradient(#000000c5, #000000c5),
     url("../../assets/img/kevin.jpg") no-repeat center fixed;
   background-size: cover;
   display: flex;
@@ -16,15 +16,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background: linear-gradient(#000000, #ffffff00);
+  /* background: linear-gradient(#000000f8, #ffffff00); */
 }
 
-.responsive, .fast-load , 
-.testimonials  {
+.responsive,
+.fast-load,
+.testimonials {
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   padding: 12px;
 }
-

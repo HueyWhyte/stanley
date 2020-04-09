@@ -13,7 +13,7 @@ export default class Home extends Component {
   }
 
   // componentWillMount() {
-    // window.removeEventListener("scroll", this.handleScroll);
+  // window.removeEventListener("scroll", this.handleScroll);
   // }
 
   handleScroll = () => {
@@ -36,7 +36,7 @@ export default class Home extends Component {
       <>
         <section className="first-section">
           <Parallax speed={2}>
-            <p style={{ color: "white", fontSize: 40 }}>Hello, I'm </p>
+            <p style={{ color: "white", fontSize: 40 }}>Hello, I'm</p>
           </Parallax>
           <motion.div
             drag={true}
@@ -49,11 +49,9 @@ export default class Home extends Component {
             <Parallax speed={-3.5}>
               <p
                 style={{
-                  color: "orange",
+                  color: "white",
                   fontSize: 70,
-                  fontWeight: "bold",
-                  // margin: 10,
-                  fontFamily: "AndallanDemo",
+                  fontWeight: "600",
                 }}
               >
                 Stanley Otabil
@@ -63,7 +61,7 @@ export default class Home extends Component {
 
           <Parallax speed={5}>
             <p style={{ color: "white", fontSize: 40 }}>
-              I'm a full-stack web developer
+              I'm a Full-Stack Web and Mobile Developer
             </p>
           </Parallax>
         </section>
@@ -97,7 +95,7 @@ export default class Home extends Component {
                 <h1 style={{ fontSize: 60 }}>Dynamic</h1>
               </Parallax>
               <Parallax speed={1.9} style={{ marginTop: "auto" }}>
-                <p style={{ fontSize: 20, color: "white" }}>
+                <p style={{ fontSize: 20 }}>
                   Websites don't have to be static, I love making pages come to
                   life. With Gestures and animations.
                 </p>
@@ -199,7 +197,7 @@ export default class Home extends Component {
             }}
           >
             <img
-              src={require("../../assets/img/app.jpg")}
+              src="https://i.ibb.co/rfCmw6J/website-responsive-mockup-template-high-res-08.jpg"
               style={{ width: "65vw" }}
               alt=""
             />
@@ -251,7 +249,7 @@ export default class Home extends Component {
             }}
           >
             <img
-              src={require("../../assets/img/app.jpg")}
+              src="https://i.ibb.co/z4mpmJy/fast-website.png"
               style={{ width: "65vw", backgroundColor: "blue" }}
               alt=""
             />
