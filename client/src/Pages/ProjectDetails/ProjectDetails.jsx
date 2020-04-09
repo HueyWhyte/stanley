@@ -64,7 +64,7 @@ class ProjectDetails extends Component {
             </div>
 
             <p style={{ color: "#b9b9b9", marginLeft: "auto", fontSize: 14 }}>
-              {project.date}SEPTEMBER 2020
+              {project.date}
             </p>
           </div>
         </section>
@@ -113,7 +113,7 @@ class ProjectDetails extends Component {
             }}
           >
             <img
-              src={require("../../assets/img/desktop.jpg")}
+              src={require("../../assets/img/roman.jpg")}
               style={{
                 borderRadius: 12,
                 margin: "6px auto",
