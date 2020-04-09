@@ -30,7 +30,7 @@ class Projects extends Component {
                 slogan={project.slogan}
                 description={project.description}
                 imageUrl={project.imageUrl}
-                timeStamp={project.timeStamp}
+                data={project.date}
               />
             ))}
         </section>

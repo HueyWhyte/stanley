@@ -16,7 +16,7 @@ export default class ProjectCard extends Component {
             </p>
             <p>{this.props.name}</p>
             <p>{this.props.slogan}</p>
-            <p>{this.props.timeStamp}</p>
+            <p>{this.props.date}</p>
           </section>
         </div>
       </Link>

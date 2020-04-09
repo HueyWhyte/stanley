@@ -64,7 +64,7 @@ class ProjectDetails extends Component {
             </div>
 
             <p style={{ color: "#b9b9b9", marginLeft: "auto", fontSize: 14 }}>
-              {project.timeStamp}SEPTEMBER 2020
+              {project.date}SEPTEMBER 2020
             </p>
           </div>
         </section>
