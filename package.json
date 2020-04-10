@@ -1,7 +1,7 @@
 {
-  "name": "stanley",
-  "version": "1.4.0",
-  "description": "My portfolio website",
+  "name": "Portfolio",
+  "version": "0.5.0",
+  "description": "Stanley's portfolio website backend",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

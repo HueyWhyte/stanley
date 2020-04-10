@@ -24,7 +24,7 @@ export default class ErrorPage extends Component {
             Looks like this page is missing. Don't worry though, our best man is
             on the case.
           </p>
-          <p style={{ marginTop: 25, fontSize: 19 }}>
+          <p style={{ marginTop: 25, fontSize: 19, textAlign: "center" }}>
             Meanwhile, why don't you try again by going
           </p>
           <Parallax speed={-2}>

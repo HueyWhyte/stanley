@@ -31,6 +31,7 @@ export default class BlogCard extends Component {
               marginLeft: "auto",
               width: 120,
               textAlign: "end",
+              marginTop: 12
             }}
           >
             1 JAN 2020

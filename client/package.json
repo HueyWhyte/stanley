@@ -1,6 +1,6 @@
 {
-  "name": "kwamina",
-  "version": "0.4.9",
+  "name": "Stanley",
+  "version": "0.9.5",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

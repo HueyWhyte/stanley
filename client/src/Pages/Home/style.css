@@ -19,12 +19,12 @@
   /* background: linear-gradient(#000000f8, #ffffff00); */
 }
 
-.responsive,
-.fast-load,
-.testimonials {
-  height: 100vh;
+.dynamic-text {
   display: flex;
+  flex: 1;
   flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 12px;
+  text-align: center;
 }

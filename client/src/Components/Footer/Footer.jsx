@@ -12,11 +12,11 @@ export default function Footer() {
     <footer>
       <section className="firstSection">
         <img
-          src={require("../../assets/img/app.jpg")}
+          src={require("../../assets/img/stan.png")}
           style={{ width: 60 }}
           alt=""
         />
-        <p>website made by me</p>
+        <p style={{ textAlign: "center" }}>Website made by Me with Love</p>
       </section>
       <section className="secendSection"></section>
       <section className="socialIcons">

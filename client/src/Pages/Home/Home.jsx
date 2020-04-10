@@ -61,23 +61,13 @@ export default class Home extends Component {
 
           <Parallax speed={5}>
             <p style={{ color: "white", fontSize: 40 }}>
-              I'm a Full-Stack Web and Mobile Developer
+              I'm a Full-Stack Developer
             </p>
           </Parallax>
         </section>
 
         <section className="dynamic">
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              textAlign: "center",
-              flexWrap: "wrap",
-              flex: 1,
-            }}
-          >
+          <div className="dynamic-text">
             <Parallax
               speed={-0.3}
               style={{
@@ -118,7 +108,7 @@ export default class Home extends Component {
               drag
               dragConstraints={{ top: 1, left: 1, right: 1, bottom: 1 }}
               animate={{ opacity: 0 }}
-              transition={{ yoyo: Infinity, duration: 1.2 }}
+              transition={{ loop: Infinity, duration: 1.2 }}
             >
               <Parallax
                 speed={2}
@@ -141,7 +131,6 @@ export default class Home extends Component {
                 cursor: "move",
                 width: 200,
                 height: 200,
-                // marginBottom: "auto",
                 justifyContent: "center",
                 alignItems: "center",
                 // translateY: `${this.state.yValue}px`,
@@ -176,7 +165,6 @@ export default class Home extends Component {
                   borderRadius: 100,
                   width: 80,
                   height: 80,
-                  // margin: 10,
                   justifyContent: "center",
                   alignItems: "center",
                   cursor: "move",
@@ -189,19 +177,10 @@ export default class Home extends Component {
         </section>
 
         <section className="responsive">
-          <div
-            style={{
-              alignItems: "center",
-              flex: 2,
-              // backgroundColor: "blue",
-            }}
-          >
-            <img
-              src="https://i.ibb.co/rfCmw6J/website-responsive-mockup-template-high-res-08.jpg"
-              style={{ width: "65vw" }}
-              alt=""
-            />
-          </div>
+          <img
+            src="https://i.ibb.co/rfCmw6J/website-responsive-mockup-template-high-res-08.jpg"
+            alt=""
+          />
           <div
             style={{
               display: "flex",
@@ -212,11 +191,10 @@ export default class Home extends Component {
               height: 200,
               flexWrap: "wrap",
               flex: 1,
-              // backgroundColor: "red",
             }}
           >
             <h1 style={{ fontSize: 60 }}>Responsive</h1>
-            <p style={{ fontSize: 20, width: 280 }}>
+            <p style={{ fontSize: 20 }}>
               My layouts will work on any device, big or small.
             </p>
           </div>
@@ -233,27 +211,15 @@ export default class Home extends Component {
               height: 200,
               flexWrap: "wrap",
               flex: 1,
-              // backgroundColor: "red",
             }}
           >
             <h1 style={{ fontSize: 60 }}>Fast</h1>
-            <p style={{ fontSize: 20, width: 280 }}>
+            <p style={{ fontSize: 20 }}>
               Fast load times and lag free interaction, my highest priority.
             </p>
           </div>
 
-          <div
-            style={{
-              flex: 2,
-              // backgroundColor: "blue",
-            }}
-          >
-            <img
-              src="https://i.ibb.co/z4mpmJy/fast-website.png"
-              style={{ width: "65vw", backgroundColor: "blue" }}
-              alt=""
-            />
-          </div>
+          <img src="https://i.ibb.co/z4mpmJy/fast-website.png" alt="" />
         </section>
       </>
     );
