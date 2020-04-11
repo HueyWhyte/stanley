@@ -9,9 +9,9 @@ import Projects from "./Pages/Projects";
 import ProjectDetails from "./Pages/ProjectDetails";
 import Contact from "./Pages/Contact";
 import Blog from "./Pages/Blog";
+import BlogPost from "./Pages/BlogPost";
 import ErrorPage from "./Pages/ErrorPage";
 import Admin from "./Pages/Admin";
-// import Welcome from "./Pages/Welcome";
 import NavigationBar from "./Components/NavigationBar";
 import Footer from "./Components/Footer";
 
@@ -43,21 +43,21 @@ function App() {
           <Route exact path="/projects">
             <Projects />
           </Route>
+          <Route exact path="/blog/:id">
+            <BlogPost />
+          </Route>
           <Route exact path="/blog">
             <Blog />
           </Route>
           <Route exact path="/contact">
             <Contact />
           </Route>
-          <Route exact path="/">
+          <Route path="/">
             <Home />
           </Route>
           <Route exact path="/admin">
             <Admin />
           </Route>
-          {/* <Route exact path="/"> */}
-          {/* <Welcome /> */}
-          {/* </Route> */}
           <Route>
             <ErrorPage />
           </Route>

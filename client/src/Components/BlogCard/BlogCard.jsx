@@ -10,7 +10,6 @@ export default class BlogCard extends Component {
           src={require("../../assets/img/app.jpg")}
           style={{
             width: 330,
-            // height: 200,
             borderRadius: 12,
           }}
           alt=""

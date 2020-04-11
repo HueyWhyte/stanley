@@ -30,10 +30,17 @@ class ProjectDetails extends Component {
           <h4 style={{ fontSize: 16, color: colorChanger(project.category) }}>
             {project.category}
           </h4>
-          <h1 style={{ fontSize: 55, margin: 12, color: "white" }}>
+          <h1
+            style={{
+              fontSize: 55,
+              margin: 12,
+              color: "white",
+              textAlign: "center",
+            }}
+          >
             {project.name}
           </h1>
-          <h3>{project.slogan}</h3>
+          <h3 style={{ textAlign: "center" }}>{project.slogan}</h3>
         </section>
 
         <section className="info-section">
@@ -148,3 +155,8 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps, { fetchProject })(ProjectDetails);
+
+// setup firebase for the rest of details
+// - project stack
+// - at leats 4 images and description
+// - option to leave a comment on a project and like project by authorized users

@@ -118,7 +118,7 @@ export default class Home extends Component {
                   width: 100,
                   height: 100,
                   marginTop: "auto",
-                  cursor: "move",
+                  cursor: "grab",
                 }}
               />
             </motion.div>
@@ -128,11 +128,11 @@ export default class Home extends Component {
                 display: "flex",
                 backgroundColor: "var(--light-red)",
                 borderRadius: 300,
-                cursor: "move",
                 width: 200,
                 height: 200,
                 justifyContent: "center",
                 alignItems: "center",
+                cursor: "grab",
                 // translateY: `${this.state.yValue}px`,
               }}
               drag
@@ -167,7 +167,7 @@ export default class Home extends Component {
                   height: 80,
                   justifyContent: "center",
                   alignItems: "center",
-                  cursor: "move",
+                  cursor: "grab",
                 }}
               >
                 <p style={{ color: "white" }}>Tap</p>
