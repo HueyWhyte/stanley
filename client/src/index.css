@@ -29,3 +29,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--main-bg-color);
 }
+
+button, input, textarea {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}

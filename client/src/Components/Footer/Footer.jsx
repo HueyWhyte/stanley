@@ -31,7 +31,7 @@ export default function Footer() {
         <p style={{ textAlign: "center" }}>Website made by Me with Love</p>
       </section>
       <section className="secendSection">
-        <motion.div style={{ scale }}>
+        {/* <motion.div style={{ scale }}>
           <motion.div
             style={{
               scaleX: scrollYProgress,
@@ -40,7 +40,7 @@ export default function Footer() {
               height: 50,
             }}
           />
-        </motion.div>
+        </motion.div> */}
       </section>
       <section className="socialIcons">
         <a

@@ -17,11 +17,11 @@
 .nav-item {
   color: #83818c;
   padding: 7px;
-  text-decoration: none;
   transition: 0.4s;
   z-index: 1;
   font-weight: 500;
   position: relative;
+  font-weight: 600;
 }
 
 .nav-item:not(.is-active):hover:before {

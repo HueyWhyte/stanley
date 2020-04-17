@@ -7,11 +7,17 @@ export default function NavigationBar() {
   return (
     <div className="NavigationBar">
       {/* <h1>NavigationBar</h1> */}
-      <NavLink to="/" className="nav-item" activeClassName="active-nav-btnOne">
+      <NavLink
+        exact
+        to="/"
+        className="nav-item"
+        activeClassName="active-nav-btnOne"
+      >
         {/* <IoMdHome size={20} color="grey" /> */}
         Home
       </NavLink>
       <NavLink
+        exact
         to="/projects"
         className="nav-item"
         activeClassName="active-nav-btnTwo"
@@ -20,6 +26,7 @@ export default function NavigationBar() {
         Projects
       </NavLink>
       <NavLink
+        exact
         to="/blog"
         className="nav-item"
         activeClassName="active-nav-btnThree"
@@ -27,6 +34,7 @@ export default function NavigationBar() {
         Blog
       </NavLink>
       <NavLink
+        exact
         to="/contact"
         className="nav-item"
         activeClassName="active-nav-btnFour"
