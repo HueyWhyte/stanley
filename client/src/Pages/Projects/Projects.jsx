@@ -20,8 +20,8 @@ class Projects extends Component {
         <ClearSpace />
 
         <section className="data-container">
-          {data &&
-            data.map((project) => (
+          {projects &&
+            projects.map((project) => (
               <ProjectCard
                 key={project._id}
                 id={project._id}
