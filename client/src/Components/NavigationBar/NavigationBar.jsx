@@ -25,7 +25,7 @@ export default function NavigationBar() {
         {/* <IoIosFolderOpen size={20} color="grey" /> */}
         Projects
       </NavLink>
-      <NavLink
+      {/* <NavLink
         exact
         to="/blog"
         className="nav-item"
@@ -40,7 +40,7 @@ export default function NavigationBar() {
         activeClassName="active-nav-btnFour"
       >
         Contact
-      </NavLink>
+      </NavLink> */}
     </div>
   );
 }
