@@ -66,34 +66,14 @@ export default class Home extends Component {
           </Parallax>
         </section>
 
-        <section
-          style={{
-            width: "80%",
-            margin: " 20px auto",
-            display: "flex",
-            flexWrap: "wrap",
-          }}
-        >
-          <div>
-            <img
-              src={require("../../assets/img/app.jpg")}
-              style={{
-                width: 540,
-                marginRight: 10,
-                boxShadow: "grey -20px 20px 1px 0px",
-              }}
-              alt=""
-            />
-          </div>
+        <section className="abt_me">
+          <img
+            src={require("../../assets/img/app.jpg")}
+            className="abt_me_img"
+            alt=""
+          />
 
-          <div
-            style={{
-              marginLeft: 10,
-              marginTop: "auto",
-              marginBottom: "auto",
-              width: "48%",
-            }}
-          >
+          <div className="abt_me_data">
             <p>who im I</p>
             <h1 style={{ fontSize: 50 }}>Hello</h1>
 

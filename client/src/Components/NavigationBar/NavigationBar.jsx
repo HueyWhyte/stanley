@@ -20,7 +20,11 @@ export default function NavigationBar() {
   return (
     <div
       className="NavigationBar"
-      style={{ backgroundColor: nav ? "#fff" : null, height: nav ? 50 : 60 }}
+      style={{
+        backgroundColor: nav ? "#fff" : null,
+        height: nav ? 50 : 60,
+        boxShadow: nav ? "0px 0px 5px #00000075" : null,
+      }}
     >
       {/* <h1>NavigationBar</h1> */}
       <NavLink

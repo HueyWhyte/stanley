@@ -10,6 +10,25 @@
   text-align: center;
   cursor: grab;
 }
+.abt_me {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.abt_me_img {
+  width: 48%;
+  margin-right: 10px;
+  box-shadow: grey -20px 20px 1px 0px;
+}
+
+.abt_me_data {
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 48%;
+}
 
 .dynamic {
   height: 100vh;
@@ -27,4 +46,23 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .abt_me {
+    width: 100%;
+  }
+  .abt_me_img,
+  .abt_me_data {
+    width: 100vw;
+  }
+
+  .abt_me_img {
+    box-shadow: grey 0px 9px 19px 0px;
+  }
+
+  .abt_me_data {
+    margin-top: 30px;
+  }
 }
