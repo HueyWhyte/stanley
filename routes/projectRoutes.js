@@ -27,10 +27,9 @@ router.post("/new", (req, res) => {
   const newProject = new Project({
     category: req.body.category,
     name: req.body.name,
-    slogan: req.body.slogan,
+    projectLink: req.body.projectLink,
     description: req.body.description,
     imageUrl: req.body.imageUrl,
-    date: req.body.date,
   });
 
   Project.create(newProject)

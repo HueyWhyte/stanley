@@ -20,6 +20,7 @@ class Admin extends Component {
       category: this.state.category,
       name: this.state.name,
       description: this.state.description,
+      projectLink: this.state.projectLink,
       imageUrl: this.state.imageUrl,
     };
 
