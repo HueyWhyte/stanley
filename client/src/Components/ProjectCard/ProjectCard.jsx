@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import "./style.css";
 import { colorChanger } from "../../assets/UIChangers";
@@ -7,7 +7,12 @@ import { colorChanger } from "../../assets/UIChangers";
 export default class ProjectCard extends Component {
   render() {
     return (
-      <Link className="project-card" to={`projects/${this.props.id}`}>
+      <a
+        href={`${this.props.projectLink}`}
+        className="project-card"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <div>
           <img src={`${this.props.imageUrl}`} alt="" className="project-img" />
           <section>
@@ -15,11 +20,10 @@ export default class ProjectCard extends Component {
               {this.props.category}
             </p>
             <p>{this.props.name}</p>
-            <p>{this.props.slogan}</p>
             <p>{this.props.date}</p>
           </section>
         </div>
-      </Link>
+      </a>
     );
   }
 }

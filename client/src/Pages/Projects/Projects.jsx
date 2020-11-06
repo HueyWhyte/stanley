@@ -26,7 +26,7 @@ class Projects extends Component {
                 id={project._id}
                 category={project.category}
                 name={project.name}
-                slogan={project.slogan}
+                projectLink={project.projectLink}
                 description={project.description}
                 imageUrl={project.imageUrl}
                 date={project.date}
