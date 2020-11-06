@@ -36,7 +36,7 @@ export default class Home extends Component {
       <>
         <section className="first-section">
           <Parallax speed={2}>
-            <p style={{ color: "white", fontSize: 40 }}>Hello, I'm</p>
+            <p style={{ color: "white", fontSize: 40 }}>My name is</p>
           </Parallax>
           <motion.div
             drag={true}
@@ -54,7 +54,7 @@ export default class Home extends Component {
                   fontWeight: "600",
                 }}
               >
-                Stanley Otabil
+                Stanley Kwamina Otabil
               </p>
             </Parallax>
           </motion.div>
@@ -64,6 +64,41 @@ export default class Home extends Component {
               I'm a Full-Stack Developer
             </p>
           </Parallax>
+        </section>
+
+        <section
+          style={{ width: "80%", margin: " 20px auto", display: "flex" }}
+        >
+          <div>
+            <img
+              src={require("../../assets/img/app.jpg")}
+              style={{
+                width: 540,
+                marginRight: 10,
+                boxShadow: "grey -20px 20px 1px 0px",
+              }}
+              alt=""
+            />
+          </div>
+
+          <div
+            style={{ marginLeft: 10, marginTop: "auto", marginBottom: "auto" }}
+          >
+            <p>who im I</p>
+            <h1 style={{ fontSize: 50 }}>Hello</h1>
+
+            <p
+              style={{
+                marginLeft: 12,
+              }}
+            >
+              I'm a full stack developer with 4 years of experience. Lorem ipsum
+              dolor, sit amet consectetur adipisicing elit. Quas facilis dolor
+              modi expedita, dolorem nam ipsam autem dolorum saepe architecto?
+              Voluptates mollitia eius laudantium labore dolore officia eligendi
+              maiores. Inventore.
+            </p>
+          </div>
         </section>
 
         <section className="dynamic">
@@ -79,12 +114,14 @@ export default class Home extends Component {
                 textAlign: "center",
                 height: 300,
                 flexWrap: "wrap",
+                backgroundColor: "blueviolet",
+                borderTopLeftRadius: 100,
               }}
             >
-              <Parallax speed={-1.5} style={{ paddingBottom: "auto" }}>
+              <Parallax speed={-1} style={{ paddingBottom: "auto" }}>
                 <h1 style={{ fontSize: 60 }}>Dynamic</h1>
               </Parallax>
-              <Parallax speed={1.9} style={{ marginTop: "auto" }}>
+              <Parallax speed={1} style={{ marginTop: "auto" }}>
                 <p style={{ fontSize: 20 }}>
                   Websites don't have to be static, I love making pages come to
                   life with Gestures and animations.
@@ -221,6 +258,16 @@ export default class Home extends Component {
 
           <img src="https://i.ibb.co/z4mpmJy/fast-website.png" alt="" />
         </section>
+
+        <section
+          style={{
+            width: "80%",
+            marginLeft: "auto",
+            marginRight: "auto",
+            backgroundColor: "blueviolet",
+            borderBottomRightRadius: 20,
+          }}
+        ></section>
       </>
     );
   }

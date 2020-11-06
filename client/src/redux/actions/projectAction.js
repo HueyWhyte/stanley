@@ -11,7 +11,7 @@ export const fetchProjects = () => (dispatch) => {
 };
 
 export const fetchProject = (id) => (dispatch) => {
-  fetch(`https://stanleyy.herokuapp.com/projects/${id}`)
+  fetch(`https://stanleyy.herokuapp.com/api/projects/${id}`)
     .then((response) => response.json())
     .then((project) => {
       dispatch({

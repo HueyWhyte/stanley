@@ -183,7 +183,7 @@ export default class Contact extends Component {
                     paddingTop: 20,
                   }}
                 >
-                  We'll be in touch.
+                  I'll be in touch.
                 </p>
               </div>
             </Parallax>

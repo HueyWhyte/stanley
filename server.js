@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cors());
 
-app.use("/projects", projectRoutes);
+app.use("/api/projects", projectRoutes);
 
 mongoose
   .connect(process.env.MONGODB_URI || "some-local-fatabase", {
