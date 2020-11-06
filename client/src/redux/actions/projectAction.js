@@ -1,5 +1,5 @@
 export const fetchProjects = () => (dispatch) => {
-  fetch("https://stanleyy.herokuapp.com/projects")
+  fetch("https://stanleyy.herokuapp.com/api/projects")
     .then((response) => response.json())
     .then((projects) => {
       dispatch({
@@ -23,7 +23,7 @@ export const fetchProject = (id) => (dispatch) => {
 };
 
 export const newProject = (nproject) => (dispatch) => {
-  fetch("https://stanleyy.herokuapp.com/projects/new", {
+  fetch("https://stanleyy.herokuapp.com/api/projects/new", {
     method: "post",
     headers: {
       "Content-Type": "application/json",
