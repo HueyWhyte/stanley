@@ -8,26 +8,10 @@ class Admin extends Component {
   state = {
     category: "",
     name: "",
-    slogan: "",
     description: "",
+    projectLink: "",
     imageUrl: "",
-    date: "",
   };
-
-  componentDidMount() {
-    const d = new Date();
-    const dtf = new Intl.DateTimeFormat("en", {
-      year: "numeric",
-      month: "short",
-      day: "2-digit",
-    });
-    const [{ value: mo }, , { value: da }, , { value: ye }] = dtf.formatToParts(
-      d
-    );
-    const nDate = `${da} ${mo} ${ye}`;
-
-    this.setState({ date: nDate });
-  }
 
   submitNewProject = (e) => {
     e.preventDefault();
@@ -35,10 +19,8 @@ class Admin extends Component {
     const project = {
       category: this.state.category,
       name: this.state.name,
-      slogan: this.state.slogan,
       description: this.state.description,
       imageUrl: this.state.imageUrl,
-      date: this.state.date,
     };
 
     this.props.newProject(project);
@@ -51,8 +33,6 @@ class Admin extends Component {
   };
 
   render() {
-    console.log(this.state.date);
-    
     return (
       <div className="admin-container">
         <ClearSpace />
@@ -87,19 +67,20 @@ class Admin extends Component {
             placeholder="name"
             onChange={this.handleInput}
           />
-          <input
-            type="text"
-            name="slogan"
-            value={this.state.slogan}
-            placeholder="slogan"
-            onChange={this.handleInput}
-          />
 
           <input
             type="text"
             name="description"
             value={this.state.description}
             placeholder="description"
+            onChange={this.handleInput}
+          />
+
+          <input
+            type="text"
+            name="projectLink"
+            value={this.state.projectLink}
+            placeholder="projectLink"
             onChange={this.handleInput}
           />
 

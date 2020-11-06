@@ -5,20 +5,12 @@ import {
   IoLogoPinterest,
   IoLogoLinkedin,
 } from "react-icons/io";
-import { useViewportScroll, motion, useTransform } from "framer-motion";
+// import { useViewportScroll, motion, useTransform } from "framer-motion";
 import "./style.css";
 
-// export default function Footer() {
-//   return (
-
-//   );
-// }
-
-// import React from 'react'
-
 export default function Footer() {
-  const { scrollYProgress } = useViewportScroll();
-  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
+  // const { scrollYProgress } = useViewportScroll();
+  // const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
 
   return (
     <footer>

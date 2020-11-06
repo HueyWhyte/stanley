@@ -4,7 +4,6 @@ import "./style.css";
 import ProjectCard from "../../Components/ProjectCard";
 import { fetchProjects } from "../../redux/actions/projectAction";
 
-import data from "../../assets/data";
 import ClearSpace from "../../Components/clearSpace";
 
 class Projects extends Component {
