@@ -67,7 +67,12 @@ export default class Home extends Component {
         </section>
 
         <section
-          style={{ width: "80%", margin: " 20px auto", display: "flex" }}
+          style={{
+            width: "80%",
+            margin: " 20px auto",
+            display: "flex",
+            flexWrap: "wrap",
+          }}
         >
           <div>
             <img
@@ -82,7 +87,12 @@ export default class Home extends Component {
           </div>
 
           <div
-            style={{ marginLeft: 10, marginTop: "auto", marginBottom: "auto" }}
+            style={{
+              marginLeft: 10,
+              marginTop: "auto",
+              marginBottom: "auto",
+              width: "48%",
+            }}
           >
             <p>who im I</p>
             <h1 style={{ fontSize: 50 }}>Hello</h1>
