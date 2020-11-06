@@ -20,6 +20,7 @@ export default class ProjectCard extends Component {
               {this.props.category}
             </p>
             <p>{this.props.name}</p>
+            <p>{this.props.description}</p>
             <p>{this.props.date}</p>
           </section>
         </div>
