@@ -18,7 +18,6 @@ export const fetchProject = (id) => (dispatch) => {
         type: "FETCH_PROJECT",
         payload: project,
       });
-      // console.log(project);
     })
     .catch((err) => console.log(err));
 };

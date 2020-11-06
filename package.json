@@ -1,10 +1,9 @@
 {
-  "name": "Portfolio",
+  "name": "portfolio",
   "version": "0.5.0",
   "description": "Stanley's portfolio website backend",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },

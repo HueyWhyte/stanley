@@ -3,9 +3,9 @@ const mongoose = require("mongoose");
 const path = require("path");
 const cors = require("cors");
 
-const projectRoutes = require("./routes/projectRoutes");
-
 const app = express();
+
+const projectRoutes = require("./routes/projectRoutes");
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -31,5 +31,3 @@ if (process.env.NODE_ENV === "production") {
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server up and running on port ${port}.`));
-
-// I can do all things through Christ who strenthens me. Amen
