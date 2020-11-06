@@ -54,7 +54,7 @@ export default class Home extends Component {
                   fontWeight: "600",
                 }}
               >
-                Stanley Kwamina Otabil
+                Kwamina
               </p>
             </Parallax>
           </motion.div>

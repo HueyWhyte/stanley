@@ -1,6 +1,6 @@
 .first-section {
   height: 100vh;
-  background: linear-gradient(#000000c5, #000000c5),
+  background: linear-gradient(blueviolet, #000000c5),
     url("https://i.ibb.co/PjY1kBf/kevin.jpg") no-repeat center fixed;
   background-size: cover;
   display: flex;

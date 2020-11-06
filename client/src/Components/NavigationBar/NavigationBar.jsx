@@ -31,6 +31,7 @@ export default function NavigationBar() {
         exact
         to="/"
         className="nav-item"
+        // style={{ color: nav ? null : "white" }}
         activeClassName="active-nav-btnOne"
       >
         {/* <IoMdHome size={20} color="grey" /> */}
@@ -40,6 +41,7 @@ export default function NavigationBar() {
         exact
         to="/projects"
         className="nav-item"
+        // style={{ color: nav ? null : "white" }}
         activeClassName="active-nav-btnTwo"
       >
         {/* <IoIosFolderOpen size={20} color="grey" /> */}
