@@ -1,18 +1,5 @@
-.NavigationBar {
-  top: 0px;
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-  position: fixed;
-  padding: 0 8px;
-  z-index: 1000;
-  transition: all;
-  transition-duration: 0.5s;
-}
-
 .nav-item {
-  color: #181038;
+  color: #a5a4a8;
   padding: 7px;
   transition: 0.4s;
   z-index: 1;
@@ -21,24 +8,15 @@
   font-weight: 600;
 }
 
-.nav-item:not(.is-active):hover:before {
+/* .nav-item:not(.is-active):hover:before {
   opacity: 1;
   bottom: 0;
 }
 
 .nav-item:not(.is-active):hover {
   color: #333;
-}
+} */
 
-.active-nav-btnOne {
-  color: orange;
-}
-.active-nav-btnTwo {
-  color: red;
-}
-.active-nav-btnThree {
-  color: green;
-}
-.active-nav-btnFour {
-  color: blue;
+.active-nav-btn {
+  color: white;
 }

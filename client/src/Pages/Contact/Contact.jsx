@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Parallax from "react-rellax";
 import { IoIosPaperPlane, IoIosDoneAll } from "react-icons/io";
 import "./style.css";
-import ClearSpace from "../../Components/clearSpace";
 
 export default class Contact extends Component {
   state = {
@@ -72,8 +71,6 @@ export default class Contact extends Component {
   render() {
     return (
       <div className="contact-container">
-        <ClearSpace />
-
         <section className="main-contents">
           <Parallax speed={-2}>
             <div className="form-container">

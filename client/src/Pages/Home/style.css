@@ -1,15 +1,3 @@
-.first-section {
-  height: 100vh;
-  background: linear-gradient(blueviolet, #000000c5),
-    url("https://i.ibb.co/PjY1kBf/kevin.jpg") no-repeat center fixed;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  cursor: grab;
-}
 .abt_me {
   width: 80%;
   margin: 20px auto;

@@ -21,6 +21,10 @@ font-family: 'Josefin Sans', sans-serif; */
   font-family: Montserrat;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -30,7 +34,9 @@ body {
   background-color: var(--main-bg-color);
 }
 
-button, input, textarea {
+button,
+input,
+textarea {
   outline: none;
 }
 

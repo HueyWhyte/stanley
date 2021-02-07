@@ -1,11 +1,19 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import styled from "styled-components";
+
 import "./style.css";
 import ProjectCard from "../../Components/ProjectCard";
 import { fetchProjects } from "../../redux/actions/projectAction";
+import data from "../../assets/data";
 
-import ClearSpace from "../../Components/clearSpace";
-
+const ProjectsContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #383838;
+`;
 class Projects extends Component {
   componentDidMount() {
     this.props.fetchProjects();
@@ -15,12 +23,10 @@ class Projects extends Component {
     const { projects } = this.props;
 
     return (
-      <div className="projects-container">
-        <ClearSpace />
-
+      <ProjectsContainer>
         <section className="data-container">
-          {projects &&
-            projects.map((project) => (
+          {data &&
+            data.map((project) => (
               <ProjectCard
                 key={project._id}
                 id={project._id}
@@ -33,7 +39,7 @@ class Projects extends Component {
               />
             ))}
         </section>
-      </div>
+      </ProjectsContainer>
     );
   }
 }

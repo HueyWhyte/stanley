@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import "./style.css";
 import { colorChanger, headerImageChanger } from "../../assets/UIChangers";
 import { fetchProject } from "../../redux/actions/projectAction";
-import ClearSpace from "../../Components/clearSpace";
 
 class ProjectDetails extends Component {
   componentDidMount() {
@@ -16,8 +15,6 @@ class ProjectDetails extends Component {
 
     return (
       <div className="project-detail-container">
-        <ClearSpace />
-
         <section
           className="bg-header-image"
           style={{

@@ -6,18 +6,6 @@
   transition-duration: 0.5s;
 }
 
-.project-card:hover {
-  box-shadow: 0px 2px 6px #c9c9c9;
-  transition-duration: 0.5s;
-}
-
-.project-img {
-  width: 100%;
-  border-radius: 15px;
-  size: cover;
-  box-shadow: 0px 4px 7px 0px grey;
-}
-
 .project-card section {
   padding: 12px;
 }

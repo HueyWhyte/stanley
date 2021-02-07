@@ -1,13 +1,34 @@
 import React, { Component } from "react";
+import styled from "styled-components";
 // import { Link } from "react-router-dom";
 
 import "./style.css";
 import { colorChanger } from "../../assets/UIChangers";
 
+const ProjectCardContainer = styled.a`
+  background-color: white;
+  width: 400px;
+  margin: 12px;
+  border-radius: 15px;
+  transition-duration: 0.5s;
+
+  &:hover {
+    box-shadow: 0px 2px 6px #c9c9c9;
+    transition-duration: 0.5s;
+  }
+
+  .project-img {
+    width: 100%;
+    border-radius: 15px;
+    size: cover;
+    box-shadow: 0px 4px 7px 0px grey;
+  }
+`;
+
 export default class ProjectCard extends Component {
   render() {
     return (
-      <a
+      <ProjectCardContainer
         href={`${this.props.projectLink}`}
         className="project-card"
         target="_blank"
@@ -24,7 +45,7 @@ export default class ProjectCard extends Component {
             <p>{this.props.date}</p>
           </section>
         </div>
-      </a>
+      </ProjectCardContainer>
     );
   }
 }
