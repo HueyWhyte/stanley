@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "heroku-postbuild": "cd client && yarn && yarn build"
+    "heroku-postbuild": "cd client && npm i && npm run build"
   },
   "author": "Stanley Kwamina Otabil",
   "license": "ISC",
