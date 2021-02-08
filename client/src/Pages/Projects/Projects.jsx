@@ -5,7 +5,7 @@ import styled from "styled-components";
 import "./style.css";
 import ProjectCard from "../../Components/ProjectCard";
 import { fetchProjects } from "../../redux/actions/projectAction";
-import data from "../../assets/data";
+// import data from "../../assets/data";
 
 const ProjectsContainer = styled.section`
   display: flex;
@@ -25,8 +25,8 @@ class Projects extends Component {
     return (
       <ProjectsContainer>
         <section className="data-container">
-          {data &&
-            data.map((project) => (
+          {projects &&
+            projects.map((project) => (
               <ProjectCard
                 key={project._id}
                 id={project._id}

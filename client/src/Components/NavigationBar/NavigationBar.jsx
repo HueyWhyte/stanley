@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { device } from "../../assets/media";
-import { IoIosFolderOpen, IoIosList } from "react-icons/io";
+import { IoIosList } from "react-icons/io";
 
 import "./style.css";
 
@@ -23,16 +23,16 @@ const NavigationBarContainer = styled.nav`
 `;
 
 const NavLinks = styled.div`
-  position: absolute;
+  position: fixed;
   width: 100%;
-  top: 60px;
+  top: 50px;
   height: 50px;
   background-color: #1d1d1d;
   display: flex;
   text-align: justify;
   align-items: center;
-
   justify-content: space-around;
+  z-index: 1200;
 
   @media ${device.tablet} {
     display: none;
@@ -118,7 +118,7 @@ export default function NavigationBar() {
         Blog
       </NavLink>  */}
 
-        {/* <NavLink
+        <NavLink
           onClick={toggleLinkList}
           exact
           to="/contact"
@@ -126,7 +126,7 @@ export default function NavigationBar() {
           activeClassName="active-nav-btnFour"
         >
           Contact
-        </NavLink> */}
+        </NavLink>
       </NavLinks>
     </>
   );

@@ -27,9 +27,9 @@ const Text = styled.p`
 `;
 
 const ContactBtn = styled.p`
-  color: #3d1bfa;
+  color: #7259ff;
   padding: 10px;
-  border: 1px solid #3d1bfa;
+  border: 1px solid #7259ff;
   margin-right: auto;
   margin-top: 10px;
   font-weight: bold;
@@ -51,8 +51,8 @@ const IntroText = styled.div`
 `;
 
 const Image = styled.img`
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   margin-left: auto;
   margin-right: auto;
 

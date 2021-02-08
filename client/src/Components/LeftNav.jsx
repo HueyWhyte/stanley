@@ -6,6 +6,7 @@ import {
   IoLogoLinkedin,
   IoLogoTwitter,
   IoMdHome,
+  IoIosContact,
 } from "react-icons/io";
 import styled from "styled-components";
 
@@ -38,7 +39,7 @@ export default class LeftNav extends Component {
       <LeftNacContainer className="LeftNav">
         <img
           src={require("../assets/img/stan.png")}
-          style={{ width: 55, height: 55 }}
+          style={{ width: 55, height: 55, marginBottom: 50 }}
           alt=""
         />
 
@@ -50,6 +51,7 @@ export default class LeftNav extends Component {
         >
           <IoMdHome size={23} color="grey" />
         </NavLink>
+
         <NavLink
           exact
           to="/projects"
@@ -57,6 +59,15 @@ export default class LeftNav extends Component {
           activeClassName="active-nav-btn"
         >
           <IoIosFolderOpen size={23} color="grey" />
+        </NavLink>
+
+        <NavLink
+          exact
+          to="/contact"
+          className="nav-item"
+          activeClassName="active-nav-btn"
+        >
+          <IoIosContact size={23} color="grey" />
         </NavLink>
 
         <SocialIcons>

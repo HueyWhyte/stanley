@@ -1,7 +1,16 @@
 import React, { Component } from "react";
 import Parallax from "react-rellax";
+import styled from "styled-components";
 import { IoIosPaperPlane, IoIosDoneAll } from "react-icons/io";
 import "./style.css";
+
+const ContactContainer = styled.section`
+  display: flex;
+  min-height: 100vh;
+  background-color: #383838;
+  flex-direction: column;
+  width: 100%;
+`;
 
 export default class Contact extends Component {
   state = {
@@ -70,7 +79,7 @@ export default class Contact extends Component {
 
   render() {
     return (
-      <div className="contact-container">
+      <ContactContainer>
         <section className="main-contents">
           <Parallax speed={-2}>
             <div className="form-container">
@@ -104,6 +113,7 @@ export default class Contact extends Component {
                     name="name"
                     id="name"
                     placeholder="Name"
+                    value={this.state.name}
                     onChange={this.handleInput}
                   />
                   {this.state.name.length >= 3 ? (
@@ -125,6 +135,7 @@ export default class Contact extends Component {
                     name="email"
                     id="email"
                     placeholder="Email"
+                    value={this.state.email}
                     onChange={this.handleInput}
                   />
                   {this.state.email.length >= 11 ? (
@@ -145,6 +156,7 @@ export default class Contact extends Component {
                     id="message"
                     rows="8"
                     placeholder="Message..."
+                    value={this.state.message}
                     onChange={this.handleInput}
                   ></textarea>
                   {this.state.message.length >= 60 ? (
@@ -152,7 +164,11 @@ export default class Contact extends Component {
                   ) : null}
                 </section>
 
-                <button className="send-btn" type="submit">
+                <button
+                  className="send-btn"
+                  type="submit"
+                  onClick={() => this.resetForm()}
+                >
                   <IoIosPaperPlane size={25} color="white" />
                 </button>
               </form>
@@ -186,7 +202,7 @@ export default class Contact extends Component {
             </Parallax>
           ) : null}
         </section>
-      </div>
+      </ContactContainer>
     );
   }
 }

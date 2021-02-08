@@ -1,13 +1,8 @@
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
 .main-contents {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding-top: 20px;
 }
 
 .form-container {
@@ -52,7 +47,6 @@ textarea {
   margin-left: auto;
   margin-top: 10px;
   transition-duration: 0.5s;
-  
 }
 
 .send-btn:hover {
