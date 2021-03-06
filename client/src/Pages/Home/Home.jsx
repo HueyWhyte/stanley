@@ -26,13 +26,14 @@ const Text = styled.p`
   font-weight: 900px;
 `;
 
-const ContactBtn = styled.p`
+const ContactBtn = styled.a`
   color: #7259ff;
   padding: 10px;
   border: 1px solid #7259ff;
   margin-right: auto;
   margin-top: 10px;
   font-weight: bold;
+  cursor: pointer;
 `;
 
 const IntroText = styled.div`
@@ -71,7 +72,7 @@ export default class Home extends Component {
 
           <Text>Web Developer.</Text>
 
-          <ContactBtn>Contact me!</ContactBtn>
+          <ContactBtn href="/contact">Contact me!</ContactBtn>
         </IntroText>
 
         <Image src={require("../../assets/img/app.jpg")} alt="" />
