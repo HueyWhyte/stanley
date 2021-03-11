@@ -80,126 +80,134 @@ export default class Contact extends Component {
   render() {
     return (
       <ContactContainer>
+        <section
+          style={{ width: "80%", marginLeft: "auto", marginRight: "auto" }}
+        >
+          <h1 style={{ color: "white", fontSize: 45 }}>Contact me</h1>
+
+          <p style={{ color: "grey" }}>
+            I'm interested in freelance opportunities - especially ambitious and
+            large projects. However if you have other request or question, dont
+            hesitate to contact me.
+          </p>
+        </section>
+
         <section className="main-contents">
-          <Parallax speed={-2}>
-            <div className="form-container">
-              <p
+          <div className="form-container">
+            <p
+              style={{
+                fontSize: 40,
+                marginBottom: 3,
+                marginTop: 3,
+                fontWeight: "bold",
+              }}
+            >
+              Get in touch
+            </p>
+            <form
+              action="."
+              method="POST"
+              className="form-style"
+              onSubmit={this.submitEmail}
+            >
+              <section
                 style={{
-                  fontSize: 40,
-                  marginBottom: 3,
-                  marginTop: 3,
-                  fontWeight: "bold",
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "100%",
                 }}
               >
-                Get in touch
-              </p>
-              <form
-                action="."
-                method="POST"
-                className="form-style"
-                onSubmit={this.submitEmail}
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  value={this.state.name}
+                  onChange={this.handleInput}
+                />
+                {this.state.name.length >= 3 ? (
+                  <IoIosDoneAll size={25} color="green" />
+                ) : null}
+              </section>
+
+              <section
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "100%",
+                }}
               >
-                <section
-                  style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    width: "100%",
-                  }}
-                >
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Name"
-                    value={this.state.name}
-                    onChange={this.handleInput}
-                  />
-                  {this.state.name.length >= 3 ? (
-                    <IoIosDoneAll size={25} color="green" />
-                  ) : null}
-                </section>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  value={this.state.email}
+                  onChange={this.handleInput}
+                />
+                {this.state.email.length >= 11 ? (
+                  <IoIosDoneAll size={25} color="green" />
+                ) : null}
+              </section>
+              <section
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "100%",
+                }}
+              >
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="8"
+                  placeholder="Message..."
+                  value={this.state.message}
+                  onChange={this.handleInput}
+                ></textarea>
+                {this.state.message.length >= 60 ? (
+                  <IoIosDoneAll size={25} color="green" />
+                ) : null}
+              </section>
 
-                <section
-                  style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    width: "100%",
-                  }}
-                >
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Email"
-                    value={this.state.email}
-                    onChange={this.handleInput}
-                  />
-                  {this.state.email.length >= 11 ? (
-                    <IoIosDoneAll size={25} color="green" />
-                  ) : null}
-                </section>
-                <section
-                  style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    width: "100%",
-                  }}
-                >
-                  <textarea
-                    name="message"
-                    id="message"
-                    rows="8"
-                    placeholder="Message..."
-                    value={this.state.message}
-                    onChange={this.handleInput}
-                  ></textarea>
-                  {this.state.message.length >= 60 ? (
-                    <IoIosDoneAll size={25} color="green" />
-                  ) : null}
-                </section>
-
-                <button
-                  className="send-btn"
-                  type="submit"
-                  onClick={() => this.resetForm()}
-                >
-                  <IoIosPaperPlane size={25} color="white" />
-                </button>
-              </form>
-            </div>
-          </Parallax>
+              <button
+                className="send-btn"
+                type="submit"
+                onClick={() => this.resetForm()}
+              >
+                <IoIosPaperPlane size={25} color="white" />
+              </button>
+            </form>
+          </div>
 
           {this.state.showBar ? (
-            <Parallax speed={2.5}>
-              <div className="thanks-container">
-                <p
-                  style={{
-                    color: "white",
-                    fontSize: 70,
-                    fontWeight: "bold",
-                    paddingBottom: 20,
-                  }}
-                >
-                  Thank You.
-                </p>
-                <hr />
-                <p
-                  style={{
-                    color: "white",
-                    fontSize: 23,
-                    paddingTop: 20,
-                  }}
-                >
-                  I'll be in touch.
-                </p>
-              </div>
-            </Parallax>
+            <div className="thanks-container">
+              <p
+                style={{
+                  color: "white",
+                  fontSize: 70,
+                  fontWeight: "bold",
+                  paddingBottom: 20,
+                }}
+              >
+                Thank You.
+              </p>
+              <hr />
+              <p
+                style={{
+                  color: "white",
+                  fontSize: 23,
+                  paddingTop: 20,
+                }}
+              >
+                I'll be in touch.
+              </p>
+            </div>
           ) : null}
         </section>
       </ContactContainer>

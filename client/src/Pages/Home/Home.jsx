@@ -52,8 +52,8 @@ const IntroText = styled.div`
 `;
 
 const Image = styled.img`
-  width: 500px;
-  height: 500px;
+  width: 550px;
+  height: 550px;
   margin-left: auto;
   margin-right: auto;
 
@@ -75,7 +75,7 @@ export default class Home extends Component {
           <ContactBtn href="/contact">Contact me!</ContactBtn>
         </IntroText>
 
-        <Image src={require("../../assets/img/app.jpg")} alt="" />
+        <Image src={require("../../assets/img/stan_wall.png")} alt="" />
       </HomeContainer>
     );
   }
