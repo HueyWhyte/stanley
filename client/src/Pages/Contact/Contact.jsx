@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Parallax from "react-rellax";
+// import Parallax from "react-rellax";
 import styled from "styled-components";
 import { IoIosPaperPlane, IoIosDoneAll } from "react-icons/io";
 import "./style.css";
@@ -9,6 +9,7 @@ const ContactContainer = styled.section`
   min-height: 100vh;
   background-color: #383838;
   flex-direction: column;
+  padding-top: 30px;
   width: 100%;
 `;
 
