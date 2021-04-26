@@ -9,7 +9,7 @@ const ContactContainer = styled.section`
   min-height: 100vh;
   background-color: #383838;
   flex-direction: column;
-  padding-top: 30px;
+  padding-top: 55px;
   width: 100%;
 `;
 
