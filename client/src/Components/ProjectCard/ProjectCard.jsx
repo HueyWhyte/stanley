@@ -21,7 +21,7 @@ const ProjectCardContainer = styled.a`
     width: 100%;
     border-radius: 7px;
     size: cover;
-    box-shadow: 0px 4px 7px 0px grey;
+    box-shadow: 0px 4px 5px 0px grey;
   }
 `;
 
