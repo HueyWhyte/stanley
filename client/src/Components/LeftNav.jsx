@@ -81,7 +81,7 @@ export default class LeftNav extends Component {
             <IoLogoLinkedin size={23} color="#f5f5f5" />
           </a>
           <a
-            href="https://twitter.com/HueyWhyte"
+            href="https://twitter.com/KwaminaWhyte"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -9,7 +9,7 @@ const ProjectCardContainer = styled.a`
   background-color: white;
   width: 400px;
   margin: 12px;
-  border-radius: 15px;
+  border-radius: 7px;
   transition-duration: 0.5s;
 
   &:hover {
@@ -19,7 +19,7 @@ const ProjectCardContainer = styled.a`
 
   .project-img {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 7px;
     size: cover;
     box-shadow: 0px 4px 7px 0px grey;
   }

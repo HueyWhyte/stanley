@@ -73,7 +73,7 @@ export default function NavigationBar() {
         }}
       >
         <img
-          src={require("../../assets/img/stan.png")}
+          src="https://i.ibb.co/42kghPt/stan.png"
           style={{ width: 30, height: 30, marginLeft: 12, marginRight: "auto" }}
           alt=""
         />
