@@ -86,7 +86,7 @@ export default class Contact extends Component {
         >
           <h1 style={{ color: "white", fontSize: 45 }}>Contact me</h1>
 
-          <p style={{ color: "grey" }}>
+          <p style={{ color: "#cccccc", fontSize: 19 }}>
             I'm interested in freelance opportunities - especially ambitious and
             large projects. However if you have other request or question, dont
             hesitate to contact me.
@@ -94,7 +94,7 @@ export default class Contact extends Component {
         </section>
 
         <section className="main-contents">
-          <div className="form-container">
+          {/* <div className="form-container">
             <p
               style={{
                 fontSize: 40,
@@ -104,8 +104,8 @@ export default class Contact extends Component {
               }}
             >
               Get in touch
-            </p>
-            <form
+            </p> */}
+          {/* <form
               action="."
               method="POST"
               className="form-style"
@@ -183,8 +183,8 @@ export default class Contact extends Component {
               >
                 <IoIosPaperPlane size={25} color="white" />
               </button>
-            </form>
-          </div>
+            </form> */}
+          {/* </div> */}
 
           {this.state.showBar ? (
             <div className="thanks-container">

@@ -74,8 +74,7 @@ export default class Home extends Component {
 
           <ContactBtn href="/contact">Contact me!</ContactBtn>
         </IntroText>
-
-        <Image src={require("../../assets/img/stan_wall.png")} alt="" />
+        <Image src="https://i.ibb.co/pXV0dy5/stan-wall.png" alt="kkd" />
       </HomeContainer>
     );
   }

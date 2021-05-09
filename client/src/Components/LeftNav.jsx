@@ -19,6 +19,8 @@ const LeftNacContainer = styled.nav`
   background-color: #1d1d1d;
   height: 100vh;
   align-items: center;
+  position: sticky;
+  top: 0;
 
   @media ${device.mobile} {
     display: none;
@@ -38,7 +40,7 @@ export default class LeftNav extends Component {
     return (
       <LeftNacContainer className="LeftNav">
         <img
-          src={require("../assets/img/stan.png")}
+          src="https://i.ibb.co/42kghPt/stan.png"
           style={{ width: 55, height: 55, marginBottom: 50 }}
           alt=""
         />
@@ -79,18 +81,18 @@ export default class LeftNav extends Component {
             <IoLogoLinkedin size={23} color="#f5f5f5" />
           </a>
           <a
-            href="https://www.instagram.com/kwamina_whyte/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <IoLogoInstagram size={23} color=" #f5f5f5" />
-          </a>
-          <a
             href="https://twitter.com/HueyWhyte"
             target="_blank"
             rel="noopener noreferrer"
           >
             <IoLogoTwitter size={20} color=" #f5f5f5" />
+          </a>
+          <a
+            href="https://www.instagram.com/kwamina_whyte/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IoLogoInstagram size={23} color=" #f5f5f5" />
           </a>
         </SocialIcons>
       </LeftNacContainer>
