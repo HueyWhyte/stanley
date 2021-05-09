@@ -1,16 +1,24 @@
 import React, { Component } from "react";
 // import Parallax from "react-rellax";
 import styled from "styled-components";
-import { IoIosPaperPlane, IoIosDoneAll } from "react-icons/io";
+import { IoLogoInstagram, IoLogoTwitter, IoLogoLinkedin } from "react-icons/io";
 import "./style.css";
 
 const ContactContainer = styled.section`
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #383838;
   flex-direction: column;
   padding-top: 55px;
   width: 100%;
+`;
+
+const SocialIcons = styled.section`
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-evenly;
+  margin-top: auto;
 `;
 
 export default class Contact extends Component {
@@ -92,6 +100,30 @@ export default class Contact extends Component {
             hesitate to contact me.
           </p>
         </section>
+
+        <SocialIcons>
+          <a
+            href="https://www.linkedin.com/in/stanleykwaminaotabil/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IoLogoLinkedin size={23} color="#f5f5f5" />
+          </a>
+          <a
+            href="https://twitter.com/KwaminaWhyte"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IoLogoTwitter size={20} color=" #f5f5f5" />
+          </a>
+          <a
+            href="https://www.instagram.com/kwamina_whyte/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IoLogoInstagram size={23} color=" #f5f5f5" />
+          </a>
+        </SocialIcons>
 
         <section className="main-contents">
           {/* <div className="form-container">
