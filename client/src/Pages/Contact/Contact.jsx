@@ -31,7 +31,7 @@ export default class Contact extends Component {
           <h1 style={{ color: "white", fontSize: 45 }}>Contact me</h1>
 
           <p style={{ color: "#cccccc", fontSize: 19, marginTop: 30 }}>
-            I'm interested in freelance and internship opportunities -
+            I'm interested in internship and freelance opportunities -
             especially ambitious and large projects. However if you have other
             request or question, dont hesitate to contact me.
           </p>
