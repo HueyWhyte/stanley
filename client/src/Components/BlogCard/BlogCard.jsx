@@ -7,7 +7,7 @@ export default class BlogCard extends Component {
     return (
       <Link to={`blog/${this.props.id}`} className="blog-card">
         <img
-          src={require("../../assets/img/app.jpg")}
+          // src={require("../../assets/img/app.jpg")}
           style={{
             width: 330,
             borderRadius: 12,
@@ -30,7 +30,7 @@ export default class BlogCard extends Component {
               marginLeft: "auto",
               width: 120,
               textAlign: "end",
-              marginTop: 12
+              marginTop: 12,
             }}
           >
             1 JAN 2020

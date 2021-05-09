@@ -1,91 +1,27 @@
 import React, { Component } from "react";
-// import Parallax from "react-rellax";
 import styled from "styled-components";
 import { IoLogoInstagram, IoLogoTwitter, IoLogoLinkedin } from "react-icons/io";
 import "./style.css";
 
 const ContactContainer = styled.section`
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 50px);
   background-color: #383838;
   flex-direction: column;
-  padding-top: 55px;
+  padding-top: 60px;
   width: 100%;
 `;
 
 const SocialIcons = styled.section`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 10px;
   justify-content: space-evenly;
   margin-top: auto;
+  margin-bottom: auto;
 `;
 
 export default class Contact extends Component {
-  state = {
-    showBar: false,
-    name: "",
-    email: "",
-    message: "",
-    sent: false,
-    buttonText: "Send Message",
-  };
-
-  handleInput = (e) => {
-    const { name, value } = e.target;
-    console.log(name, ":", value);
-    this.setState({ [name]: value });
-  };
-
-  submitEmail = (e) => {
-    e.preventDefault();
-
-    this.setState({
-      buttonText: "...sending",
-    });
-
-    // let data = {
-    //   name: this.state.name,
-    //   email: this.state.email,
-    //   message: this.state.message,
-    // };
-
-    if (this.state.name !== "") {
-      console.log("name field is correct perform other tasks");
-      if (this.state.email !== "") {
-        console.log("email field is also correct perform other tasks");
-        if (this.state.message !== "") {
-          console.log("message field is also correct perform other tasks");
-          this.setState({ showBar: true });
-          // logic goes here
-          // axios
-          //   .post("API_URI", data)
-          //   .then((res) => {
-          //     this.setState({ sent: true }, this.resetForm());
-          //   })
-          //   .catch(() => {
-          //     console.log("Message not sent");
-          //   });
-        } else {
-          console.log("message field empty");
-        }
-      } else {
-        console.log("email field empty");
-      }
-    } else {
-      console.log("name field empty");
-    }
-  };
-
-  resetForm = () => {
-    this.setState({
-      name: "",
-      message: "",
-      email: "",
-      buttonText: "Message Sent",
-    });
-  };
-
   render() {
     return (
       <ContactContainer>
@@ -94,7 +30,7 @@ export default class Contact extends Component {
         >
           <h1 style={{ color: "white", fontSize: 45 }}>Contact me</h1>
 
-          <p style={{ color: "#cccccc", fontSize: 19 }}>
+          <p style={{ color: "#cccccc", fontSize: 19, marginTop: 30 }}>
             I'm interested in freelance opportunities - especially ambitious and
             large projects. However if you have other request or question, dont
             hesitate to contact me.
@@ -107,142 +43,23 @@ export default class Contact extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <IoLogoLinkedin size={23} color="#f5f5f5" />
+            <IoLogoLinkedin size={53} color="#f5f5f5" />
           </a>
           <a
             href="https://twitter.com/KwaminaWhyte"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <IoLogoTwitter size={20} color=" #f5f5f5" />
+            <IoLogoTwitter size={50} color=" #f5f5f5" />
           </a>
           <a
             href="https://www.instagram.com/kwamina_whyte/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <IoLogoInstagram size={23} color=" #f5f5f5" />
+            <IoLogoInstagram size={53} color=" #f5f5f5" />
           </a>
         </SocialIcons>
-
-        <section className="main-contents">
-          {/* <div className="form-container">
-            <p
-              style={{
-                fontSize: 40,
-                marginBottom: 3,
-                marginTop: 3,
-                fontWeight: "bold",
-              }}
-            >
-              Get in touch
-            </p> */}
-          {/* <form
-              action="."
-              method="POST"
-              className="form-style"
-              onSubmit={this.submitEmail}
-            >
-              <section
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  width: "100%",
-                }}
-              >
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Name"
-                  value={this.state.name}
-                  onChange={this.handleInput}
-                />
-                {this.state.name.length >= 3 ? (
-                  <IoIosDoneAll size={25} color="green" />
-                ) : null}
-              </section>
-
-              <section
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  width: "100%",
-                }}
-              >
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Email"
-                  value={this.state.email}
-                  onChange={this.handleInput}
-                />
-                {this.state.email.length >= 11 ? (
-                  <IoIosDoneAll size={25} color="green" />
-                ) : null}
-              </section>
-              <section
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  width: "100%",
-                }}
-              >
-                <textarea
-                  name="message"
-                  id="message"
-                  rows="8"
-                  placeholder="Message..."
-                  value={this.state.message}
-                  onChange={this.handleInput}
-                ></textarea>
-                {this.state.message.length >= 60 ? (
-                  <IoIosDoneAll size={25} color="green" />
-                ) : null}
-              </section>
-
-              <button
-                className="send-btn"
-                type="submit"
-                onClick={() => this.resetForm()}
-              >
-                <IoIosPaperPlane size={25} color="white" />
-              </button>
-            </form> */}
-          {/* </div> */}
-
-          {this.state.showBar ? (
-            <div className="thanks-container">
-              <p
-                style={{
-                  color: "white",
-                  fontSize: 70,
-                  fontWeight: "bold",
-                  paddingBottom: 20,
-                }}
-              >
-                Thank You.
-              </p>
-              <hr />
-              <p
-                style={{
-                  color: "white",
-                  fontSize: 23,
-                  paddingTop: 20,
-                }}
-              >
-                I'll be in touch.
-              </p>
-            </div>
-          ) : null}
-        </section>
       </ContactContainer>
     );
   }
